@@ -6,6 +6,7 @@ import time
 from datetime import date
 
 #Variables for connecting to the router
+userName = input("User: ")
 passwrd = getpass("Type your password:")
 tsfnumber = input('Tech Support ID (ex. ts1 ts2): ')
 
@@ -16,7 +17,7 @@ with open("7750list.csv", newline='') as nodesfile:
         device = ConnectHandler(
             device_type="alcatel_sros",
             host=routerIp,
-            username="P3194337",
+            username=userName,
             password=passwrd,
         )
         
