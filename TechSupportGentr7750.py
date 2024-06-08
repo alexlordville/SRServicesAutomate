@@ -9,7 +9,7 @@ from datetime import date
 passwrd = getpass("Type your password:")
 tsfnumber = input('Tech Support ID (ex. ts1 ts2): ')
 
-with open("nodesTaskAutom.csv", newline='') as nodesfile:
+with open("7750list.csv", newline='') as nodesfile:
     nodesReader = csv.DictReader(nodesfile)
     for row in nodesReader:
         routerIp = row["ip"]
