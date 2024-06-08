@@ -6,7 +6,7 @@ import time
 from datetime import date
 
 #Variables for connecting to the router
-passwrd = getpass("Type your PID password:")
+passwrd = getpass("Type your password:")
 tsfnumber = input('Tech Support ID (ex. ts1 ts2): ')
 
 with open("nodesTaskAutom.csv", newline='') as nodesfile:
